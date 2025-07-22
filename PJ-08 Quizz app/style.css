@@ -1,0 +1,140 @@
+
+body {
+    font-family: sans-serif;
+    background: linear-gradient(to right, rgba(8, 182, 217, 0.954), rgb(244, 7, 181));
+    align-items: center;
+        height: 100%;
+
+}
+
+.app {
+    box-sizing: border-box;
+    max-width: 600px;
+    padding: 40px;
+    background-color: aliceblue;
+    margin: auto;
+    border-radius: 50px;
+    border: none;
+    margin-top: 40px;
+}
+
+.qa {
+    font-size: 60px;
+    text-align: center;
+    border-bottom: 2px solid black;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+h2 {
+    font-size:large;
+    margin-bottom: 20px;
+}
+
+
+
+.btn {
+    padding: 10px;
+    background-color: white;
+    display: flex;
+    border-radius: 10px;
+    margin: 10px;
+    border: 1px solid black;
+    width: 100%;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover:not([disabled]) {
+    background-color:black;
+    transform: scale(1.06);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    color: white;
+
+}
+
+.btn:disabled{
+    cursor: no-drop;
+}
+
+#nxt {
+    background-color: rgb(7, 88, 229);
+    color: white;
+    padding: 10px;
+    align-items: center;
+    width: 20%;
+    font-size: larger;
+    font-weight: 500;
+    border-radius: 20px;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    display: block;
+    margin: auto;
+    margin-top: 30px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    display: none;
+}
+
+#nxt:hover {
+    background-color: rgb(20, 3, 150);
+    transform: scale(1.1);
+    
+}
+
+.correct{
+    background-color: rgb(67, 245, 67);
+    color: black;
+}
+
+.incorrect{
+    background-color: rgb(243, 65, 65);
+    color: rgb(73, 72, 72);
+}
+
+#score{
+    color: blue;
+    text-align: center;
+    border-radius: 30px;
+    background-color: rgba(211, 226, 43, 0.483);
+
+}
+
+
+@media screen and (max-width: 768px) {
+    .qa {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1rem;
+    }
+
+    #nxt {
+        width: 80%;
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .app {
+        padding: 20px;
+        border-radius: 20px;
+    }
+
+    .qa {
+        font-size: 1.6rem;
+    }
+
+    .btn {
+        font-size: 0.95rem;
+        padding: 12px;
+    }
+    
+
+    #nxt {
+        width: 90%;
+        font-size: 0.95rem;
+    }
+}
